@@ -1,9 +1,5 @@
 $(document).ready(function() {
 
-$('.grid').isotope({
-  // options
-  itemSelector: '.grid-item',
-  layoutMode: 'fitRows'
-});
+var mixer = mixitup('.container');
 
 });
