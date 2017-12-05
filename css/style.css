@@ -1,0 +1,29 @@
+
+html, body {
+	background: white;
+	height:100%;
+}
+
+.red-box {
+	display:block;
+	height:200px;
+	width:200px;
+	color:red;
+}
+
+.black-box {
+	display:block;
+	height:200px;
+	width:400px;
+	color:black;
+}
+
+.orange-box {
+	display:block;
+	height:200px;
+	width:200px;
+	color:orange;
+}
+
+.grid-item { width: 200%; }
+.grid-item--width2 { width: 400%; }
