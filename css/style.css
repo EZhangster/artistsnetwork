@@ -192,7 +192,7 @@ position:absolute;
 	width: 400px;
     position: absolute;
     left: 575px;
-    bottom: -100px;
+    top:600px;
 		-webkit-transition-duration:1s;
 		-webkit-transition-timing-function: ease-in-out;
 
