@@ -55,12 +55,13 @@ a{
 .nav-button-active{
 	position:fixed;
 	width:100%;
-	height:100%;
+	height:120%;
 	margin:0;
 	background:rgba(0,0,0,.95);
 	z-index:999;
 	-webkit-transition-duration:1s;
 	-webkit-transition-timing-function: ease-in-out;
+	margin-top:-15px;
 }
 
 .nav-text {
@@ -79,7 +80,7 @@ a{
 
 .close{
 	position: absolute;
-top: 15;
+top: 30;
 z-index: 999999;
 color: white;
 right: 30;
@@ -100,7 +101,7 @@ cursor:pointer;
 }
 
 .link-square a{
-	color:white;
+	color:#68a9cf;
 }
 
 .square{
@@ -139,8 +140,8 @@ cursor:pointer;
 .square-1-active{
 	width: 350px;
 height: 350px;
-background: #68a9cf;
-border-color: #68a9cf;
+background:none;
+border: #68a9cf 10px solid;
 transform: rotate(45deg);
 left: 575px;
 top: -100px;
@@ -164,8 +165,8 @@ position:absolute;
 .square-2-active{
 	width: 350px;
 	height: 350px;
-	background: #68a9cf;
-	border-color: #68a9cf;
+	background:none;
+	border: #68a9cf 10px solid;
 	transform: rotate(45deg);
 	left: 872px;
 	position: absolute;
@@ -188,11 +189,11 @@ position:absolute;
 .square-3-active{
 	width:350px;
 	height:350px;
-	background:#68a9cf;
-	border-color:#68a9cf;
+	background:none;
+	border:#68a9cf 10px solid;
 	transform: rotate(45deg);
 	position: absolute;
-	left: 567px;
+	left: 575px;
 	top:500px;
 	-webkit-transition-duration:1s;
 	-webkit-transition-timing-function: ease-in-out;
@@ -212,8 +213,8 @@ position:absolute;
 .square-4-active{
 	width:350px;
 	height:350px;
-	background:#68a9cf;
-	border-color:#68a9cf;
+	background:none;
+	border:#68a9cf 10px solid;
 	transform: rotate(45deg);
 	left: 277px;
 	position: absolute;
