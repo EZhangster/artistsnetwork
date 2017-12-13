@@ -96,7 +96,7 @@ cursor:pointer;
 	font-size:40px;
 	transform: rotate(-45deg);
 	text-align:center;
-	margin-top:175px;
+	margin-top:150px;
 }
 
 .link-square a{
@@ -137,8 +137,8 @@ cursor:pointer;
 }
 
 .square-1-active{
-	width: 400px;
-height: 400px;
+	width: 350px;
+height: 350px;
 background: #68a9cf;
 border-color: #68a9cf;
 transform: rotate(45deg);
@@ -162,16 +162,16 @@ position:absolute;
 }
 
 .square-2-active{
-	width: 400px;
-	    height: 400px;
-	    background: #68a9cf;
-	    border-color: #68a9cf;
-	    transform: rotate(45deg);
-	    left:935px;
-	    position: absolute;
-	    top: 267px;
-			-webkit-transition-duration:1s;
-			-webkit-transition-timing-function: ease-in-out;
+	width: 350px;
+	height: 350px;
+	background: #68a9cf;
+	border-color: #68a9cf;
+	transform: rotate(45deg);
+	left: 872px;
+	position: absolute;
+	top: 200px;
+	-webkit-transition-duration:1s;
+	-webkit-transition-timing-function: ease-in-out;
 }
 
 .square-3{
@@ -186,18 +186,16 @@ position:absolute;
 }
 
 .square-3-active{
-	width:400px;
-	height:400px;
+	width:350px;
+	height:350px;
 	background:#68a9cf;
 	border-color:#68a9cf;
 	transform: rotate(45deg);
-	width: 400px;
-    position: absolute;
-    left: 575px;
-    top:600px;
-		-webkit-transition-duration:1s;
-		-webkit-transition-timing-function: ease-in-out;
-
+	position: absolute;
+	left: 567px;
+	top:500px;
+	-webkit-transition-duration:1s;
+	-webkit-transition-timing-function: ease-in-out;
 }
 
 .square-4{
@@ -212,17 +210,16 @@ position:absolute;
 }
 
 .square-4-active{
-	width:400px;
-	height:400px;
+	width:350px;
+	height:350px;
 	background:#68a9cf;
 	border-color:#68a9cf;
 	transform: rotate(45deg);
-left: 215px;
-position: absolute;
-top: 265px;
--webkit-transition-duration:1s;
--webkit-transition-timing-function: ease-in-out;
-
+	left: 277px;
+	position: absolute;
+	top: 200px;
+	-webkit-transition-duration:1s;
+	-webkit-transition-timing-function: ease-in-out;
 }
 
 /*END NAV*/
