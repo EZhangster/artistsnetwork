@@ -6,7 +6,11 @@ html, body {
 	background: white;
 	height:100%;
 	font-family: 'Roboto Condensed';
-	margin:15px;
+	margin:0;
+}
+
+.body-nav-clicked{
+	margin:0;
 }
 
 a{
@@ -14,8 +18,13 @@ a{
 	color:black;
 }
 
-#container {
+.page-container {
 	width: 1600px;
+	margin:0px 15px;
+}
+
+.container-nav-active{
+	margin:0px;
 }
 
 .section {
@@ -26,12 +35,30 @@ a{
 /**Navigation**/
 
 .nav-button{
-	position:fixed;
+	position:absolute;
 	right:25px;
-	top:25px;
+	top: 100px;
 	width:30px;
 	cursor:pointer;
 	z-index:999;
+	-webkit-transition-duration:1s;
+	-webkit-transition-timing-function: ease-in-out;
+}
+
+.nav-button-scrolled{
+	position:fixed;
+	top:15px;
+}
+
+.nav-button-active{
+	position:fixed;
+	width:100%;
+	height:100%;
+	margin:0;
+	background:rgba(0,0,0,.95);
+	z-index:999;
+	-webkit-transition-duration:1s;
+	-webkit-transition-timing-function: ease-in-out;
 }
 
 .nav-text {
@@ -48,13 +75,39 @@ a{
 	opacity:1;
 }
 
+.close{
+	position: absolute;
+top: 15;
+z-index: 999999;
+color: white;
+right: 30;
+font-size: 25px;
+cursor:pointer;
+}
+
+.hidden{
+	display:none;
+}
+
+.link-square{
+	color:white;
+	font-size:40px;
+	transform: rotate(-45deg);
+	text-align:center;
+	margin-top:175px;
+}
+
+.link-square a{
+	color:white;
+}
+
 .square{
 	width:10px;
 	height:10px;
 	opacity:.5;
 	display: inline-block;
 	border:1px solid black;
-	background-color:#fff;
+	background-color: black;
 	position:relative;
 	-webkit-transform: perspective(1px) translateZ(0);
 	transform: perspective(1px) translateZ(0);
@@ -71,6 +124,8 @@ a{
 }
 
 .square-1{
+	-webkit-transition-duration:.5s;
+	-webkit-transition-timing-function: ease-in-out;
 }
 
 .nav-button:hover > .square-1{
@@ -79,16 +134,47 @@ a{
 	border-color:#68a9cf;
 }
 
+.square-1-active{
+	width: 400px;
+height: 400px;
+background: #68a9cf;
+border-color: #68a9cf;
+transform: rotate(45deg);
+left: 575px;
+top: -100px;
+position:absolute;
+-webkit-transition-duration:1s;
+-webkit-transition-timing-function: ease-in-out;
+
+}
+
 .square-2{
+	-webkit-transition-duration:.5s;
+	-webkit-transition-timing-function: ease-in-out;
 }
 
 .nav-button:hover > .square-2{
-	transform: translateY(8px) translateX(5px) rotate(45deg);
+	transform: translateY(8px) translateX(7px) rotate(45deg);
 	background:#68a9cf;
 	border-color:#68a9cf;
 }
 
+.square-2-active{
+	width: 400px;
+	    height: 400px;
+	    background: #68a9cf;
+	    border-color: #68a9cf;
+	    transform: rotate(45deg);
+	    left:935px;
+	    position: absolute;
+	    top: 267px;
+			-webkit-transition-duration:1s;
+			-webkit-transition-timing-function: ease-in-out;
+}
+
 .square-3{
+	-webkit-transition-duration:.5s;
+	-webkit-transition-timing-function: ease-in-out;
 }
 
 .nav-button:hover > .square-3{
@@ -97,13 +183,44 @@ a{
 	border-color:#68a9cf;
 }
 
+.square-3-active{
+	width:400px;
+	height:400px;
+	background:#68a9cf;
+	border-color:#68a9cf;
+	transform: rotate(45deg);
+	width: 400px;
+    position: absolute;
+    left: 575px;
+    bottom: -100px;
+		-webkit-transition-duration:1s;
+		-webkit-transition-timing-function: ease-in-out;
+
+}
+
 .square-4{
+	-webkit-transition-duration:.5s;
+	-webkit-transition-timing-function: ease-in-out;
 }
 
 .nav-button:hover > .square-4{
-	transform: translateY(5px) translateX(-8px) rotate(45deg);
+	transform: translateY(5px) translateX(-6px) rotate(45deg);
 	background:#68a9cf;
 	border-color:#68a9cf;
+}
+
+.square-4-active{
+	width:400px;
+	height:400px;
+	background:#68a9cf;
+	border-color:#68a9cf;
+	transform: rotate(45deg);
+left: 215px;
+position: absolute;
+top: 265px;
+-webkit-transition-duration:1s;
+-webkit-transition-timing-function: ease-in-out;
+
 }
 
 /*END NAV*/
@@ -111,13 +228,15 @@ a{
 /*LOGO*/
 
 .logo {
-padding-bottom:20px;
+	padding-bottom: 20px;
+	right: 15px;
+	position: absolute;
 }
 
 /*PAGE HEADER*/
 
 .header {
-	font-size:105px;
+	font-size:70px;
 	color:black;
 	font-weight:300;
 	margin-top:30px;
@@ -140,7 +259,7 @@ padding-bottom:20px;
 .outer {
 	width: 1px;
 	height: 25px;
-	left: 171px;
+	left: 125px;
 	position: relative;
 	overflow: hidden;
 }
@@ -179,7 +298,7 @@ padding-bottom:20px;
 
 .article-sort ul li{
 	display:inline-block;
-	border-right: 2px solid;
+	border-right: 1px solid;
 	padding:0px 20px;
 }
 
@@ -235,7 +354,7 @@ padding-bottom:20px;
 
 
 
-/*Articles*/
+/*Articles Select*/
 
 .article{
 	margin:30px 30px 0px 0px;
@@ -341,7 +460,8 @@ top: -25px;
 }
 
 .article-divider{
-	width: 32px;margin-left: 30px;
+	width: 32px;
+	margin: auto;
 }
 
 
@@ -396,7 +516,7 @@ top: -25px;
 
 #bacchus-ariadne:after{
 	content: "";
-	background:rgba(0, 0, 0, 0.75);
+	background:rgba(0, 0, 0, 0.5);
 }
 
 #bacchus-ariadne:hover:after{
@@ -416,7 +536,7 @@ top: -25px;
 }
 
 #mau:after{
-	background:rgba(0, 0, 0, 0.9);
+	background:rgba(0, 0, 0, 0.75);
 }
 
 #mau:hover:after{
@@ -480,7 +600,7 @@ top: -25px;
 }
 
 #stirling:after{
-	background:rgba(0, 0, 0, 0.9);
+	background:rgba(0, 0, 0, 0.5);
 }
 
 #stirling:hover:after{
@@ -527,3 +647,332 @@ top: -25px;
 	content: "";
 	opacity:0.75;
 }
+
+
+
+/* Article Body */
+
+.article-header{
+	z-index:2;
+	-webkit-transition-duration: 1s;
+	transition-duration: 1s;
+	margin-top: 0px;
+	text-align: center;
+	z-index:1;
+}
+
+.article-hero-image{
+	background-image:url("../images/boticelli_venus_overlay.jpg");
+	background-repeat: no-repeat;
+	background-size: 1600px 400px;
+	height: 435px;
+	width:1600px;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 1;
+	padding-top: 60px;
+}
+
+.article-category{
+	color: #68a9cf;
+	font-size: 17px;
+	font-weight: 800;
+	z-index:999;
+}
+
+.article-category:after{
+	content: "";
+	position: absolute;
+	background-image: url(../images/category-background.png);
+	background-repeat: no-repeat;
+	background-size: 60px;
+	width: 100px;
+	height: 100px;
+	left: 784px;
+	top: 237px;
+}
+
+.article-title{
+	font-family:'Roboto';
+	font-weight:900;
+	font-size:60px;
+	color: #333;
+	margin: 40px 0px 20px;
+	z-index:999;
+}
+
+.article-subtitle{
+	font-family: 'Bellefair', serif;
+	font-weight:300;
+	font-size:45px;
+	color: #333;
+	margin: 15px 0px;
+	z-index:999;
+}
+
+.article-author-date{
+	font-family: 'Bellefair', serif;
+	color: #333;
+	font-size:20px;
+	font-weight: 300;
+	margin: 15px 0px 15px;
+	z-index:999;
+}
+
+.article-blurb{
+	font-family: 'Roboto Condensed';
+	color: #333;
+	font-size: 16px;
+	font-weight: 500;
+	width: 775px;
+	text-align:center;
+	margin:auto;
+	margin-top: 10px;
+	z-index:999;
+	line-height: 1.5;
+	padding-bottom:25px;
+}
+
+.arrow {
+  position: relative;
+  bottom: 0;
+  left: 50%;
+  margin-left:-20px;
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/arrow-down.png);
+	background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.bounce {
+  -webkit-animation: bounce 2s infinite;
+}
+
+@-webkit-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {bottom:0px;}
+	40% {bottom:10px;}
+	60% {bottom:5px;}
+}
+
+/* TIMELINE */
+
+
+.timeline-blurb-container{
+	width:1600px;
+	text-align:center;
+	display:inline-block;
+	margin:15px 0px;
+}
+
+.timeline-blurb{
+	width:800px;
+	margin: auto;
+	text-align:center;
+	line-height:1.5;
+}
+
+.timeline-header {
+	font-size: 40px;
+    color: #68a9cf;
+    padding: 10px;
+    font-family: 'Roboto Condensed';
+    border-bottom: 1px solid;
+    font-weight: 900;
+}
+
+.timeline-gap{
+	position: relative;
+  width:1600px;
+	height:25px;
+  margin: auto;
+}
+
+.timeline-gap:after{
+	content: '';
+	position: absolute;
+	width: 3px;
+	background-color: #cccccc;
+	top: 0;
+	bottom: 0;
+	left: 50%;
+	margin-left: -3px;
+}
+
+.timeline-text{
+	padding-top:20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.timeline-wrapper{
+	height:3000px;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  width:1600px;
+  margin: auto;
+	z-index:1;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 3px;
+  background-color: #cccccc;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.time-line-container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+  min-height: 400px;
+	z-index:2;
+}
+
+/* The circles on the timeline */
+.time-line-container::after {
+  content: '';
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  right: -154px;
+  background-color: white;
+  border: 4px solid #cccccc;
+  top: 15px;
+  border-radius: 50%;
+  z-index:2;
+}
+
+/* Place the container to the left */
+.left {
+	text-align:right;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 191px;
+  top: 160px;
+  border: medium solid #f1f1f1;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #f1f1f1;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 175px;
+  top: 167px;
+  border: medium solid #f1f1f1;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #f1f1f1 transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -156px;
+}
+
+/* The actual content */
+.timeline-content {
+  padding: 20px 30px;
+  background-color: #f1f1f1;
+  position: relative;
+  border-radius: 6px;
+  top: 105px;
+  width: 560px;
+}
+
+.right-content-fix{
+	left:145px;
+}
+
+.is-hidden{
+	visibility: hidden;
+}
+
+.fade-in{
+	visibility:visible;
+	animation-name: fadeInLeft;
+}
+
+@keyframes fadeInLeftBig {
+  from {
+    opacity: 0;
+    transform: translate3d(-2000px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Specific Timeline IDs */
+
+#florence:after{
+	background-image: url(../images/florence.jpg);
+	background-size:300px 300px;
+}
+
+#selfie:after{
+	background-image: url(../images/boticelli_selfie.jpg);
+	background-size:300px 300px;
+}
+
+#simonetta:after{
+	background-image: url(../images/boticelli_simonetta.jpg);
+	background-size:300px 300px;
+}
+
+#venus-simonetta:after{
+	background-image: url(../images/venus_simonetta.jpg);
+	background-size:300px 300px;
+}
+
+#bonfire:after{
+	background-image: url(../images/bonfire.jpg);
+	background-size:300px 300px;
+}
+
+#grave:after{
+	background-image: url(../images/boticelli_grave.jpg);
+	background-size:300px 300px;
+}
+
+#boticelli_museum:after{
+	background-image: url(../images/boticelli_museum.jpg);
+	background-size:300px 300px;
+}
+
+/*END TIMELINE*/
