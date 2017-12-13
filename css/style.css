@@ -21,6 +21,7 @@ a{
 .page-container {
 	width: 1600px;
 	margin:0px 15px;
+	margin-top:-15px;
 }
 
 .container-nav-active{
