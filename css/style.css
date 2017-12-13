@@ -156,6 +156,10 @@ position:absolute;
 	background-color: #68a9cf;
 }
 
+.square-1-active:hover > a{
+	color:white;
+}
+
 .square-2{
 	-webkit-transition-duration:.5s;
 	-webkit-transition-timing-function: ease-in-out;
@@ -182,6 +186,10 @@ position:absolute;
 
 .square-2-active:hover{
 	background-color: #68a9cf;
+}
+
+.square-2-active:hover > a{
+	color:white;
 }
 
 .square-3{
@@ -212,6 +220,10 @@ position:absolute;
 	background-color: #68a9cf;
 }
 
+.square-3-active:hover > a{
+	color:white;
+}
+
 .square-4{
 	-webkit-transition-duration:.5s;
 	-webkit-transition-timing-function: ease-in-out;
@@ -238,6 +250,10 @@ position:absolute;
 
 .square-4-active:hover{
 	background-color: #68a9cf;
+}
+
+.square-4-active:hover > a{
+	color:white;
 }
 
 /*END NAV*/
