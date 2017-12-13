@@ -156,7 +156,7 @@ position:absolute;
 	background-color: #68a9cf;
 }
 
-.square-1-active:hover > a{
+.square-1-active:hover > .link-square-1 a{
 	color:white;
 }
 
@@ -188,7 +188,7 @@ position:absolute;
 	background-color: #68a9cf;
 }
 
-.square-2-active:hover > a{
+.square-2-active:hover > .link-square-2 a{
 	color:white;
 }
 
@@ -220,7 +220,7 @@ position:absolute;
 	background-color: #68a9cf;
 }
 
-.square-3-active:hover > a{
+.square-3-active:hover > .link-square-3 a{
 	color:white;
 }
 
@@ -252,7 +252,7 @@ position:absolute;
 	background-color: #68a9cf;
 }
 
-.square-4-active:hover > a{
+.square-4-active:hover > .link-square-4 a{
 	color:white;
 }
 
