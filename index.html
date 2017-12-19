@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html>
-   <head>
+<html><head>
       <meta charset="UTF-8">
 
       <!-- CSS Files -->
-      <link rel="stylesheet" href="css/reset.css" />
-      <link rel="stylesheet" href="css/style.css" />
+      <link rel="stylesheet" href="css/reset.css">
+      <link rel="stylesheet" href="css/animate.css">
+      <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/style.css">
 
       <!--Fonts-->
       <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
@@ -18,201 +18,52 @@
       <script type="text/javascript" src="js/art-network.js"></script>
    </head>
    <body>
-      <div id="container">
+      <div id="page-container index-container">
+        <!--First half of page-->
+        <div class="hero-text animated fadeIn">A COMMUNITY FOR</div>
+        <div class="artist-maker-inspired animated fadeInRightAdjust" id="artist"><span class="small-font">the</span>ARTIST</div>
+        <div class="artist-maker-inspired animated fadeInLeftAdjust" id="maker"><span class="small-font">the</span>MAKER</div>
+        <div class="artist-maker-inspired animated fadeInDownadjust" id="inspired"><span class="small-font">the</span>INSPIRED</div>
 
-         <!--Navgation Squares-->
-         <div class="nav-button">
-            <div class="square square-1">
-            </div>
-            <div class="square square-2">
-            </div>
-            <div class="square square-3">
-            </div>
-            <div class="square square-4">
-            </div>
-            <div class="nav-text">
-               Navigate
-            </div>
-         </div>
-
-				 <!--ArtistNetwork Logo-->
-         <div class="logo">
-            <a href="index.html"><img src="images/logo.png"></img></a>
-         </div>
-
-				 <!--Page Header-->
-         <div class="header">
-            <span class="blue-art">ART</span>ICLES
-         </div>
-
-				 <!--Vertical Line 1-->
-         <div class="outer">
-            <div class="inner">
-            </div>
-         </div>
-
-				 <!--Sub Header-->
-         <div class="sub-header">
-            <p>Connecting artists with ideas, inspiration and instruction through art resources such as articles, art demonstrations and step-by-steps. Learn how to draw and paint a great variety of subjects in many different mediums with the best art instructors today.</p>
-         </div>
-
-				 <!--Vertical Line 2-->
-         <div class="outer">
-            <div class="inner">
-            </div>
-         </div>
-
-				 <!--Article Sort Navigation-->
-         <div class="article-sort controls">
-            <ul>
-							<li>
-								 <div data-filter="all" class="hvr-underline-from-left">
-										All <span class="blue-art">Art</span>icles
-								 </div>
-							</li>
-               <li>
-                  <div data-filter=".critiques" class="hvr-underline-from-left">
-                     <span class="blue-art">Art</span> Critiques and Studies
-                  </div>
-               </li>
-               <li>
-                  <div data-filter=".demos" class="hvr-underline-from-left">
-                     <span class="blue-art">Art</span> Demos and Techniques
-                  </div>
-               </li>
-               <li>
-                  <div data-filter=".materials" class="hvr-underline-from-left">
-                     <span class="blue-art">Art</span> Materials &amp; Tools
-                  </div>
-               </li>
-               <li>
-                  <div data-filter=".interviews" class="hvr-underline-from-left">
-                     <span class="blue-art">Art</span>ist Interviews &amp; Profiles
-                  </div>
-               </li>
-               <li>
-                  <div data-filter=".art-colors" class="hvr-underline-from-left">
-                     <span class="blue-art">Art</span> &amp; Colors
-                  </div>
-               </li>
-               <li>
-                  <div data-filter=".art-career" class="hvr-underline-from-left">
-                     <span class="blue-art">Art</span> Career Tips &amp; <span class="blue-art">Art</span>icles
-                  </div>
-               </li>
-							 <li>
-                  <div data-sort="random" class="hvr-underline-from-left">
-                     Shuffle
-                  </div>
-               </li>
-							 <li>
-                  <div data-sort="default" class="hvr-underline-from-left">
-                     Standard
-                  </div>
-               </li>
-            </ul>
-         </div>
-
-         <!--Articles Start-->
-				 <div class="container">
-	         <a href="#">
-	            <div class="article left overlay mix critiques" data-order="1" id="boticelli">
-	               <div class="arrow-box"></div>
-	               <div class="text">
-	                  <div class="category">CRITIQUES &amp; STUDIES</div>
-	                  <div class="title">BOTICELLI'S LIFE IN PIECES</div>
-	                  <div class="subtitle">An Art History 101 Timeline</div>
-	                  <hr class="article-divider">
-	                  <div class="author-date">By Courtney Jordan - March 27, 2017</div>
-	               </div>
-	            </div>
-	         </a>
-	         <a href="#">
-	            <div class="article left overlay mix art-colors" data-order="2" id="bacchus-ariadne">
-	               <div class="arrow-box"></div>
-	               <div class="text">
-	                  <div class="category" id="art-colors">ART &amp; COLORS</div>
-	                  <div class="title">BOW DOWN TO BLUE</div>
-	                  <div class="subtitle">Ultramarine is Here to Stay</div>
-	                  <hr class="article-divider">
-	                  <div class="author-date">By Artists Network - November 7, 2017</div>
-	               </div>
-	            </div>
-	         </a>
-	         <a href="#">
-	            <div class="article left overlay mix demo" data-order="3" id="mau">
-	               <div class="arrow-box"></div>
-	               <div class="text" id="text-mau">
-	                  <div class="category" id="art-demos">ART DEMOS &amp; TECHNIQUES</div>
-	                  <div class="title">DRAWING IS PAINTING WITHOUT COLORS</div>
-	                  <div class="subtitle">Portrait Drawing Details</div>
-	                  <hr class="article-divider">
-	                  <div class="author-date">By Courtney Jordan - March 23, 2017</div>
-	               </div>
-	            </div>
-	         </a>
-	         <a href="#">
-	            <div class="article left overlay mix critiques" data-order="4" id="grafitti">
-	               <div class="arrow-box"></div>
-	               <div class="text">
-	                  <div class="category">CRITIQUES &amp; STUDIES</div>
-	                  <div class="title">ART OR VANDALISM</div>
-	                  <div class="subtitle">It's a Fine Line</div>
-	                  <hr class="article-divider">
-	                  <div class="author-date">By Jennifer Smith - December 28, 2016</div>
-	               </div>
-	            </div>
-	         </a>
-	         <a href="#">
-	            <div class="article left overlay mix materials" data-order="5" id="drawing-materials">
-	               <div class="arrow-box" id=></div>
-	               <div class="text">
-	                  <div class="category" id="draw-materials-cat">ART MATERIALS &amp; TOOLS</div>
-	                  <div class="title">DRAWING MATERIALS AND METHODS</div>
-	                  <div class="subtitle">5 Tips from Top Artists</div>
-	                  <hr class="article-divider">
-	                  <div class="author-date">By Austin R. Williams - September 20, 2017</div>
-	               </div>
-	            </div>
-	         </a>
-					 <a href="#">
-	            <div class="article left overlay mix interviews" data-order="6" id="stirling">
-	               <div class="arrow-box"></div>
-	               <div class="text">
-	                  <div class="category" id="artists-interview">ARTIST INTERVIEWS &amp; PROFILES</div>
-	                  <div class="title">ARTIST OF THE MONTH</div>
-	                  <div class="subtitle">Nicholas Stirling</div>
-	                  <hr class="article-divider">
-	                  <div class="author-date">By Michael Woodson - March 6, 2017</div>
-	               </div>
-	            </div>
-	         </a>
-					 <a href="#">
-	            <div class="article left overlay mix demos" data-order="7" id="painting">
-	               <div class="arrow-box"></div>
-	               <div class="text">
-	                  <div class="category" id="art-demos">ART DEMOS &amp; TECHNIQUES</div>
-	                  <div class="title">PAINTING TIPS</div>
-	                  <div class="subtitle">The Value of Hard and Soft Edges</div>
-	                  <hr class="article-divider">
-	                  <div class="author-date">By Johannes Vloothuis - November 30, 2017</div>
-	               </div>
-	            </div>
-	         </a>
-					 <a href="#">
-	            <div class="article left overlay mix art-career" data-order="8" id="relationships">
-	               <div class="arrow-box"></div>
-	               <div class="text">
-	                  <div class="category" id="category-career">ART CAREER TIPS &amp; ARTICLES</div>
-	                  <div class="title">THE FINE ART OF RELATIONSHIPS</div>
-	                  <div class="subtitle">Rules Every Artist Should Know</div>
-	                  <hr class="article-divider">
-	                  <div class="author-date">By Maria Woodie - August 25, 2017</div>
-	               </div>
-	            </div>
-	         </a>
-				 </div>
-			 </div>
+        <!--Second half of page-->
+        <div class="second-container">
+        <div class="animated fadeIn" id="front-page-logo"><img src="images/logo.png"></div>
+        <div class="outer animated fadeIn" id="index-line-1">
+                <div class="inner">
+                </div>
+        </div>
+        <div class="about-us-link index-link animated fadeIn">
+          <a href="#">ABOUT US</a>
+        </div>
+        <div class="outer animated fadeIn" id="index-line-2">
+                <div class="inner">
+                </div>
+        </div>
+        <div class="articles-link index-link animated fadeIn">
+          <a href="articles.html">ARTICLES</a>
+        </div>
+        <div class="outer animated fadeIn" id="index-line-3">
+                <div class="inner">
+                </div>
+        </div>
+        <div class="store-link index-link animated fadeIn">
+          <a href="#">STORE</a>
+        </div>
+        <div class="outer animated fadeIn" id="index-line-4">
+                <div class="inner">
+                </div>
+        </div>
+        <div class="social-icons-container">
+        <a href="http://www.facebook.com/artistsnetwork/" target="_blank"><i class="fab fa-facebook-f social-icons animated fadeInLeft" id="facebook-icon" ></i></a>
+        <a href="http://twitter.com/intent/follow?source=followbutton&variant=1.0&screen_name=artistsnetwork" target="_blank"><i class="fab fa-twitter social-icons animated fadeInLeft" id="twitter-icon" ></i></a>
+        <a href="http://instagram.com/artistsnetwork/" target="_blank"><i class="fab fa-instagram social-icons animated fadeInLeft" id="instagram-icon" ></i></a>
+        </div>
       </div>
-   </body>
-</html>
+      </div>
+
+
+
+
+
+
+</body></html>

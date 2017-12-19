@@ -25,74 +25,77 @@ $(nb).click( function() {
 } );
 
 $(".close").click( function() {
-    $(".nav-button-active").addClass("nav-button");
-    $(".nav-button-active").removeClass("nav-button-active");
-    $(".square-1").removeClass("square-1-active");
-    $(".square-2").removeClass("square-2-active");
-    $(".square-3").removeClass("square-3-active");
-    $(".square-4").removeClass("square-4-active");
-    $(".close").addClass("hidden");
+     $(".nav-button-active").addClass("nav-button");
+     $(".nav-button-active").removeClass("nav-button-active");
+     $(".page-container").removeClass("container-nav-active");
+     $(".square-1").removeClass("square-1-active");
+     $(".square-2").removeClass("square-2-active");
+     $(".square-3").removeClass("square-3-active");
+     $(".square-4").removeClass("square-4-active");
+     $(".close, .link-square").addClass("hidden");
 } );
 
 $(document).scroll(function(){
 var y = $(document).scrollTop();
 
+
+
 $("#update").html(y);
 
 if (y>400) {
-  $("#florence").fadeIn();
+  $("#florence").removeClass("hidden", 1000);
 }
 
 else {
-  $("#florence").fadeOut();
+  $("#florence").addClass("hidden", 1000);
 }
 
 if (y>800) {
-  $("#selfie").fadeIn();
+  $("#selfie").removeClass("hidden", 1000);
 }
 
 else {
-  $("#selfie").fadeOut();
+  $("#selfie").addClass("hidden", 1000);
 }
 
 if (y>1200) {
-  $("#simonetta").fadeIn();
+  $("#simonetta").removeClass("hidden", 1000);
 }
 
 else {
-  $("#simonetta").fadeOut();
+  $("#simonetta").addClass("hidden", 1000);
 }
 
 if (y>1600) {
-  $("#venus-simonetta").fadeIn();
+  $("#venus-simonetta").removeClass("hidden", 1000);
 }
 
 else {
-  $("#venus-simonetta").fadeOut();
+  $("#venus-simonetta").addClass("hidden", 1000);
 }
 
 if (y>2000) {
-  $("#bonfire").fadeIn();
+  $("#bonfire").removeClass("hidden", 1000);
 }
 
 else {
-  $("#bonfire").fadeOut();
+  $("#bonfire").addClass("hidden", 1000);
 }
 
 if (y>2400) {
-  $("#grave").fadeIn();
+  $("#grave").removeClass("hidden", 1000);
 }
 
 else {
-  $("#grave").fadeOut();
+  $("#grave").addClass("hidden", 1000);
 }
 
 if (y>2800) {
-  $("#boticelli_museum").fadeIn();
+  $("#boticelli_museum").removeClass("hidden", 1000);
 }
 
 else {
-  $("#boticelli_museum").fadeOut();
+  $("#boticelli_museum").addClass("hidden", 1000);
 }
 });
 
