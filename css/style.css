@@ -1010,34 +1010,77 @@ top: -25px;
 	top: 80px;
 	margin-left: 505px;
 	-webkit-animation-duration: 1s;
+	width:500px;
 }
 
 .artist-maker-inspired{
-	color:#68a9cf;
+	color:#000;
 	font-size: 75px;
 	font-weight: 900;
 }
 
+.artist-maker-inspired-active {
+	color:#68a9cf;
+}
+
+#artist-background{
+	background-image: url(../images/the-artists.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.1;
+		-webkit-transition-duration:1s;
+		-webkit-transition-timing-function: ease-in-out;
+}
+
+#maker-background{
+	background-image: url(../images/the-makers.jpg);
+	background-size:cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 1;
+		display:none;
+		-webkit-transition-duration:1s;
+		-webkit-transition-timing-function: ease-in-out;
+}
+
+#inspired-background{
+	background-image: url(../images/the-inspired.jpg);
+	background-size:cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 1;
+		display:none;
+		-webkit-transition-duration:1s;
+		-webkit-transition-timing-function: ease-in-out;
+}
+
+#artist-background{
+	background-image: url(../images/the-artists.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 1;
+}
 #artist{
-
 display: inline-block;
-
 text-align: center;
-
 font-family: 'Roboto Condensed';
-
 position: absolute;
-
 margin-top: 135px;
-
 margin-left: 600px;
-
 -webkit-animation-delay: .5s;
-
 -webkit-animation-duration: 6s;
 }
 
-#maker{display: inline-block;text-align: center;font-family: 'Roboto Condensed';position: absolute;margin-top: 290px;margin-left: 730px;-webkit-animation-delay: 1.5s;-webkit-animation-duration: 5s;}
+#maker{display: inline-block;text-align: center;font-family: 'Roboto Condensed';position: absolute;margin-top: 290px;margin-left: 730px;-webkit-animation-delay: 1.5s;-webkit-animation-duration: 5s;
+}
 
 #inspired{
     display: inline-block;
@@ -1057,10 +1100,22 @@ margin-left: 600px;
 	margin-left: 11px;
 }
 
+.first-container{
+	position: absolute;
+	top: 65px;
+	z-index:9999;
+}
+
 .second-container{
 	position: absolute;
-	margin-left: 1000px;
-	top: 65px;
+    margin-left: 1000px;
+    top: 138px;
+    z-index: 9999;
+    padding: 20px;
+    border-radius: 11px;
+    background: rgba(255,255,255,0.75);
+		-webkit-animation-delay: 5s;
+		-webkit-animation-duration: 1s;
 }
 
 #front-page-logo{
@@ -1118,7 +1173,7 @@ margin-left: 600px;
     padding: 15px 0px;
     width: 100px;
     margin: auto;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid rgba(0,0,0,0);
 }
 
 .index-link:hover{
@@ -1167,4 +1222,19 @@ margin-left: 600px;
 #instagram-icon{
 	-webkit-animation-delay: 9.5s;
 	-webkit-animation-duration: .5s;
+}
+
+#slides {
+}
+
+.panel {
+	width:100%;
+	height:100%;
+}
+
+.slidesjs-navigation, .slidesjs-pagination-item, .slidesjs-stop{
+	display:none;
+	overflow:hidden;
+	position:absolute;
+	margin-top:-1000px;
 }

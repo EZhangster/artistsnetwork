@@ -14,19 +14,29 @@
 
       <!-- All Javascript/jQuery Files-->
       <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-      <script type="text/javascript" src="js/mixitup.min.js"></script>
+      <script type="text/javascript" src="js/jquery.slides.js"></script>
+      <script type="text/javascript" src="js/slideshow.js"></script>
       <script type="text/javascript" src="js/art-network.js"></script>
    </head>
    <body>
+     <div id="slides">
+     <div class="panel one" id="artist-background"></div>
+     <div class="panel two" id="maker-background"></div>
+      <div class="panel three" id="inspired-background"></div>
+     </div>
       <div id="page-container index-container">
         <!--First half of page-->
+        <div class="first-container">
         <div class="hero-text animated fadeIn">A COMMUNITY FOR</div>
-        <div class="artist-maker-inspired animated fadeInRightAdjust" id="artist"><span class="small-font">the</span>ARTIST</div>
-        <div class="artist-maker-inspired animated fadeInLeftAdjust" id="maker"><span class="small-font">the</span>MAKER</div>
-        <div class="artist-maker-inspired animated fadeInDownadjust" id="inspired"><span class="small-font">the</span>INSPIRED</div>
+        <ul class="artist-maker-inspired">
+        <li class="animated fadeInRightAdjust" id="artist"><span class="small-font">the</span>ARTIST</li>
+        <li class="animated fadeInLeftAdjust" id="maker"><span class="small-font">the</span>MAKER</li>
+        <li class="animated fadeInDownadjust" id="inspired"><span class="small-font">the</span>INSPIRED</li>
+        </ul>
+        </div>
 
         <!--Second half of page-->
-        <div class="second-container">
+        <div class="animated fadeIn second-container">
         <div class="animated fadeIn" id="front-page-logo"><img src="images/logo.png"></div>
         <div class="outer animated fadeIn" id="index-line-1">
                 <div class="inner">
