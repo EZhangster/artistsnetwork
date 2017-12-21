@@ -1236,5 +1236,6 @@ margin-left: 600px;
 	display:none;
 	overflow:hidden;
 	position:absolute;
-	margin-top:-1000px;
+	margin-top:-9999px;
+	margin-left:-9999px;
 }
